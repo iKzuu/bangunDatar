@@ -1,4 +1,7 @@
 import 'package:bangun_datar_kelas_b/page/persegi_page.dart';
+import 'package:bangun_datar_kelas_b/page/persegipanjang_page.dart';
+import 'package:bangun_datar_kelas_b/page/segitiga_page.dart';
+import 'package:bangun_datar_kelas_b/page/lingkaran_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -22,17 +25,31 @@ class HomePage extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>PersegiPage()));
                   },
                   child: CustomMenu(imageAssets: "assets/persegi.png", title: "Persegi"))),
-              Expanded(child: CustomMenu(imageAssets: "assets/persegi.png", title: "Persegi")),
+              Expanded(child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PersegipanjangPage()));
+                },
+                  child: CustomMenu(imageAssets: "assets/persegipanjang.png", title: "Persegi Panjang"))),
             ],
           ),
           Row(
             children: [
-              CustomMenu(imageAssets: "assets/persegipanjang.png", title: "Persegi Panjang"),
-              CustomMenu(imageAssets: "assets/persegipanjang.png", title: "Persegi Panjang"),
+              Expanded(child: InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SegitigaPage()));
+                  },
+                  child: CustomMenu(imageAssets: "assets/segitiga.png", title: "Segitiga"))),
+              Expanded(child: InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>LingkaranPage()));
+                  },
+                  child: CustomMenu(imageAssets: "assets/ling.png", title: "Lingkaran"))),
+              // CustomMenu(imageAssets: "assets/persegipanjang.png", title: "Persegi Panjang"),
+              // CustomMenu(imageAssets: "assets/persegipanjang.png", title: "Persegi Panjang"),
             ],
           ),
-          CustomMenu(imageAssets: "assets/segitiga.png", title: "Segitiga"),
-          CustomMenu(imageAssets: "assets/ling.png", title: "Lingkaran"),
+          // CustomMenu(imageAssets: "assets/segitiga.png", title: "Segitiga"),
+          // CustomMenu(imageAssets: "assets/ling.png", title: "Lingkaran"),
         ],
       ),
     );
