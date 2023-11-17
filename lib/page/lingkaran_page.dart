@@ -24,7 +24,7 @@ class LingkaranPage extends StatelessWidget {
             ),
           ),
           Container(
-            child: Text("Persegi adalah segi empat yang keempat sisinya sama panjang dan keempat sudutnya siku-siku atau 90°."),
+            child: Text("Lingkaran adalah tempat kedudukan titik-titik yang berjarak sama dengan satu titik tertentu.  Yang dimaksud titik tertentu adalah titik pusat lingkaran, sedangkan jarak yang sama adalah jari-jari lingkaran. Nah, sebelum kita membahas mengenai keliling dan luas lingkaran, Sobat Pintar perlu tahu terlebih dahulu mengenai unsur-unsur dari lingkaran."),
             decoration: BoxDecoration(
                 color: Colors.green.shade300,borderRadius: BorderRadius.all(Radius.circular(10))
             ),
