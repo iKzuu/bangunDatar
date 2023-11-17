@@ -24,7 +24,7 @@ class SegitigaPage extends StatelessWidget {
             ),
           ),
           Container(
-            child: Text("Persegi adalah segi empat yang keempat sisinya sama panjang dan keempat sudutnya siku-siku atau 90°."),
+            child: Text("Segitiga merupakan bangun datar yang dibatasi dengan adanya tiga buah sisi serta memiliki tiga buah titik sudut. Kemudian untuk alas dari segitiga adalah satu dari sisi suatu bangun segitiga. Lalu untuk tingginya adalah garis yang berbentuk tegak lurus dengan sisi alas dan melewati titik sudut yang saling berhadapan dengan sisi alas."),
             decoration: BoxDecoration(
                 color: Colors.green.shade300,borderRadius: BorderRadius.all(Radius.circular(10))
             ),
